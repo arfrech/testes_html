@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script>
+    var n1=calculo.name.n1;
+    var n2=calculo.name.n2;
+    function somar(){
+        var resultado = n1+n2;
+        alert("A soma é: " + resultado);
+    }
+
+</script>
+</head>
+<body>
+
+    <form name="calculo" action="" method="POST">
+        Primeiro número <input type="number" name="n1">
+        Segundo número <input type="number" name="n2">
+        <input type="button" onclick="somar()" value="Somar">
+    </form>
+
+</body>
+
+</html>

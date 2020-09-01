@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="C:\Users\987286640\Desktop\projeto\css\estilos.css">
+        <script>
+            function validar(){
+                var nome=formuser.nome.value;
+                var email=formuser.email.value;
+                var senha=formuser.senha.value;
+                if(nome==""){
+                    alert("Por favor, preencha o campo Nome");
+                    formuser.nome.focus();
+                    return false;
+                }
+                if(email=="" || email.indexOf("@")==-1){
+                    alert("Preencha o campo EMAIL com um e-mail válido.");
+                    formuser.email.focus();
+                    return false;
+                }
+                if(senha=="" || senha.length <= 5){
+                    alert("Preencha o campo SENHA com no mínimo 6 dígitos.");
+                    formuser.senha.focus();
+                    return false;
+                }
+                alert("Bem-vindo(a) "+nome+", confirme se o seu e-mail esta correto: " + email);
+            }
+           
+        </script>
+    </head>
+    <title>GAMA Academy - Cursos na área de Tecnologia</title>
+    <body>
+        <div align="center" width=%20% height="40%">
+            <img src="C:\Users\987286640\Desktop\projeto\img\gama.png">
+        </div>
+        <h2>Acesso de Alunos</h2>
+        <form name="formuser" action="" method="POST">
+            Nome <input type="text" name="nome"><br>
+            Email <input type="text" name="email"><br>
+            Senha <input type="text" name="senha"><br>
+        </form>
+
+        <input type="button" onclick="validar()" value="Enviar">
+
+    </body>
+</html>

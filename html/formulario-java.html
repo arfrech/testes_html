@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="C:\Users\987286640\Desktop\projeto\css\estilos.css" 
+        // <script>
+        <script>
+            window.alert("Seja bem vindo(a) a nossa página")
+            var canal="GAMA Academy";
+            var curso="Curso de Java Script";
+            var separador="-"
+
+            // alert(canal+separador+curso); 
+            var nome=prompt("Por favor, informe o seu nome:", "Digite aqui seu nome");
+            document.write("Bem vindo(a) "+nome);
+
+            function acao1(){
+                alert("Dentro de alguns instantes iremos redirecionar você para a página de formulário.");
+                window.open("../html/form-javascript.html");
+            }
+           
+        </script>
+    </head>
+    <title>GAMA Academy - Cursos na área de Tecnologia</title>
+    <body>
+        <div align="center" width=%20% height="40%">
+            <img src="C:\Users\987286640\Desktop\projeto\img\gama.png">
+        </div>
+
+        <input type="button" onclick="acao1()" value="Exibir Informação">
+
+    </body>
+</html>
