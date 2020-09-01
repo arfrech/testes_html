@@ -1,0 +1,25 @@
+    #titulo {
+        color: rebeccapurple;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 120%;
+    }
+
+    body {
+        background-color:yellowgreen;
+    }
+
+    .formulario {
+        color: darkred;
+        font-family: cursive;
+        text-align: justify;
+    }
+
+    .titulo-form{
+        font-weight: bold;
+        font-style: italic;
+        color: tomato;
+    }
